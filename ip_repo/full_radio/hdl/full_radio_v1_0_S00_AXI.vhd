@@ -461,7 +461,7 @@ begin
 
 	-- Add user logic here
 	
-	  resetn <= S_AXI_ARESETN and slv_reg2(0);
+	  resetn <= S_AXI_ARESETN and (not slv_reg2(0));
 
       FAKE_ADC : dds_compiler_0
       PORT MAP (
